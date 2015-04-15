@@ -1,0 +1,14 @@
+{
+  "name": "cylon-bean",
+  "version": "0.0.1",
+  "private": true,
+  "devDependencies": {
+    "chai": "2.1.0",
+    "mocha": "2.1.0",
+    "sinon": "1.12.2",
+    "sinon-chai": "2.7.0"
+  },
+  "dependencies": {
+    "cylon": "1.0.0"
+  }
+}
