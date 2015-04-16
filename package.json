@@ -9,6 +9,8 @@
     "sinon-chai": "2.7.0"
   },
   "dependencies": {
-    "cylon": "1.0.0"
+    "bean-serial": "^0.2.1",
+    "ble-bean": "^2.1.0",
+    "cylon": "^1.0.0"
   }
 }
