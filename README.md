@@ -54,7 +54,21 @@ Cylon.robot({
 You can also connect to GPIO and i2c devices using the `bean` adaptor:
 
 ```javascript
-// code here...
+var Cylon = require("cylon");
+
+Cylon.robot({
+  connections: {
+    bean: { adaptor: "bean" }
+  },
+
+  devices: {
+    led: { driver: "led", pin: 5 }
+  },
+
+  work: function(my) {
+    every((1).second(), my.led.toggle);
+  }
+}).start();
 ```
 
 ## How to Connect
