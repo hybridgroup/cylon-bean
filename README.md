@@ -45,7 +45,7 @@ Cylon.robot({
     	var r = Math.floor(Math.random() * 255);
     	var g = Math.floor(Math.random() * 255);
     	var b = Math.floor(Math.random() * 255);
-    	my.bean.setColor(r, g, b);
+    	my.bean.setLed(r, g, b);
     });
   }
 }).start();
@@ -73,7 +73,25 @@ Cylon.robot({
 
 ## How to Connect
 
-Will go here...
+The LightBlue Bean is a Bluetooth LE device. By default you will connect to the first Bean, for example:
+
+```javascript
+Cylon.robot({
+  connections: {
+    bean: { adaptor: "bean" }
+  }
+...
+```
+
+If you want to connect to a specific Bean, use the `beanName` parameter like this:
+
+```javascript
+Cylon.robot({
+  connections: {
+    bean: { adaptor: "bean", beanName: "mybean" }
+  }
+...
+```
 
 ## Documentation
 
@@ -89,7 +107,7 @@ Thank you!
 * We will look at the patch, test it out, and give you feedback.
 * Avoid doing minor whitespace changes, renamings, etc. along with merged content. These will be done by the maintainers from time to time but they can complicate merges and should be done seperately.
 * Take care to maintain the existing coding style.
-* Add unit tests for any new or changed functionality & Lint and test your code using [Grunt](http://gruntjs.com/).
+* Add unit tests for any new or changed functionality & jslint and test your code using [Make](http://www.gnu.org/software/make/).
 * All pull requests should be "fast forward"
   * If there are commits after yours use “git rebase -i <new_head_branch>”
   * If you have local changes you may need to use “git stash”

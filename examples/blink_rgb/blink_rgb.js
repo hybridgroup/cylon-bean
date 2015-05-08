@@ -16,7 +16,7 @@ Cylon.robot({
     	var r = Math.floor(Math.random() * 255);
     	var g = Math.floor(Math.random() * 255);
     	var b = Math.floor(Math.random() * 255);
-    	my.bean.setColor(r, g, b);
+    	my.bean.setLed(r, g, b);
     });
   }
 }).start();
