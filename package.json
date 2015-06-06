@@ -25,7 +25,8 @@
     "gpio",
     "i2c",
     "bean",
-    "lightblue"
+    "lightblue",
+    "firmata"
   ],
 
   "devDependencies": {
