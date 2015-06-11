@@ -16,8 +16,8 @@ Cylon.robot({
       console.log(x, y, z, valid);
     });
 
-    every(100, function(){
-    	my.bean.getAcceleration();
+    every(100, function() {
+      my.bean.getAcceleration();
     });
   }
 }).start();

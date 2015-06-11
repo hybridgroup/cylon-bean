@@ -16,8 +16,8 @@ Cylon.robot({
       console.log(temp, valid);
     });
 
-    every(100, function(){
-    	my.bean.getTemperature();
+    every(100, function() {
+      my.bean.getTemperature();
     });
   }
 }).start();
