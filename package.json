@@ -1,7 +1,6 @@
 {
   "name": "cylon-bean",
   "version": "0.0.1",
-  "main": "lib/index.js",
   "description": "Cylon adaptor for LightBlue Bean",
   "homepage": "http://cylonjs.com",
   "bugs": "https://github.com/hybridgroup/cylon-bean/issues",
